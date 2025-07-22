@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -38,10 +38,22 @@
       opacity: 0.25;
       animation: movebg 60s linear infinite;
       z-index: 0;
+      pointer-events: none;
     }
     @keyframes movebg {
       0% { background-position: center top; }
       100% { background-position: center bottom; }
+    }
+    @media (max-width: 768px) {
+      header {
+        padding: 3rem 1rem;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
     }
     header h1, header p {
       position: relative;
@@ -126,6 +138,20 @@
       cursor: pointer;
       border-radius: 4px;
     }
+
+    .entrada-blog {
+      background-color: #f3e5dc;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    .entrada-blog h3 {
+      margin-top: 0;
+      color: #3a2e2a;
+    }
+    .entrada-blog p {
+      margin-bottom: 0;
+    }
   </style>
 </head>
 <body>
@@ -136,7 +162,7 @@
 
 <header>
   <h1>Lex Sax Asesoría & Abogados</h1>
-  <p>Asesoría y despacho jurídico con presencia en Sax y Elda. Especialistas en derecho laboral, contencioso, mercantil, tributario y asesoramiento fiscal, laboral y contable.</p>
+  <p>Asesoría y despacho jurídico con sede en Sax. Especialistas en derecho laboral, contencioso, mercantil, tributario y asesoramiento fiscal, laboral y contable.</p>
 </header>
 
 <nav>
@@ -144,6 +170,7 @@
   <a href="#servicios">Servicios</a>
   <a href="#contacto">Contacto</a>
   <a href="#ubicacion">Ubicación</a>
+  <a href="#blog">Blog</a>
 </nav>
 
 <main>
@@ -182,12 +209,134 @@
 
   <section id="ubicacion">
     <h2>Ubicación</h2>
-    <p><strong>Sede 1:</strong> Gran Vía Nº13, Entlo. 9, 03630 Sax (Alicante)</p>
+    <p><strong>Dirección:</strong> Gran Vía Nº13, Entlo. 9, 03630 Sax (Alicante)</p>
     <iframe src="https://www.google.com/maps?q=Gran+Vía+13+Sax+Alicante&output=embed"></iframe>
-
-    <p><strong>Sede 2:</strong> C/ Hernán Cortés, Nº20 - 2º - L9, 03600 - Elda</p>
-    <iframe src="https://www.google.com/maps?q=Calle+Hernán+Cortés+20+Elda&output=embed"></iframe>
   </section>
+
+  
+  <section id="blog">
+    <h2>Blog</h2>
+  
+    <div class="entrada-blog">
+      <h3 onclick="mostrarEntrada(this)">¿Qué hacer ante un despido improcedente?</h3>
+      <p style="display:none">Si has sido despedido injustificadamente, mantén la calma. Revisa tu contrato y carta de despido. Consulta a un abogado laboralista para defender tus derechos. Tienes 20 días hábiles para reclamar. En Lex Sax Asesoría valoramos tu caso para proteger tus intereses.</p>
+    </div>
+  
+    <div class="entrada-blog">
+      <h3 onclick="mostrarEntrada(this)">Consejos fiscales para autónomos en 2025</h3>
+      <p style="display:none">La nueva legislación fiscal exige claridad y organización. Controla deducciones, lleva al día gastos y facturas, y presenta correctamente el modelo 303. Lex Sax optimiza tus impuestos y evita sanciones.</p>
+    </div>
+  
+    <div class="entrada-blog">
+      <h3 onclick="mostrarEntrada(this)">Responsabilidad Tributaria del Administrador</h3>
+      <p style="display:none">Hacienda puede derivar la responsabilidad tributaria de la Sociedad al administrador o
+        administradores de una sociedad y les obliga a responder con su patrimonio personal por la
+        deuda que dejó la empresa. Suele ocurrir cuando una sociedad cesa su actividad habiendo
+        dejado obligaciones tributarias pendientes de pago.
+        Los Artículos 42 y 43 de la Ley General Tributaria (LGT) permiten a Hacienda reclamar
+        deudas de una sociedad de forma solidaria y subsidiaria respectivamente a los
+        administradores, si estos no realizan los actos necesarios una vez que conocen o debieron
+        conocer el estado de insolvencia. La forma de evitarlo es instar un concurso de acreedores, ya
+        que de lo contrario el administrador responderá con su patrimonio personal por las deudas de
+        la empresa.
+        Si el administrador ha actuado de forma diligente, puede evitar la derivación de
+        responsabilidad, y para ello, ha tenido que cerrar el negocio habiendo pagado las deudas o,
+        siendo consciente de su existencia, instar un concurso de acreedores para liquidarlas.
+        La regla general es la responsabilidad subsidiaria (LGT art.43), precisando la
+        responsabilidad solidaria (LGT art.42) un precepto legal que expresamente la determine. El
+        ámbito de la responsabilidad se extiende a la totalidad de la deuda tributaria exigida en
+        período voluntario, pero no a las sanciones, salvo en determinadas excepciones.
+        La LGT exige (art. 41.5) que, tratándose de un caso de responsabilidad subsidiaria, se
+        dicte la declaración de fallido del deudor principal y de los posibles responsables solidarios,
+        siendo una condictio iuris para la exigibilidad de la deuda. A partir de este momento comienza
+        el dies a quo para derivar la responsabilidad al administrador.
+        En los traspasos, también responde el sucesor de la actividad por las obligaciones
+        tributarias contraídas por el anterior titular, por lo que un traspaso de negocio puede llevar
+        consigo una derivación de responsabilidad tributaria.</p>
+    </div>
+  
+    <div class="entrada-blog">
+      <h3 onclick="mostrarEntrada(this)">De Jubilación Activa a Jubilación Total</h3>
+      <p style="display:none">La Sala IV del Tribunal Supremo, en su interpretación del artículo 18.2 RD
+        1131/2002, reiteró en su sentencia de 1 de octubre de 2020 que, para el cálculo de la
+        base reguladora de la pensión de jubilación ordinaria se han de tener en cuenta las bases
+        de cotización del periodo de trabajo a tiempo parcial, cuando el trabajador redujo su
+        jornada y salario, como si hubiera trabajado a jornada completa, siempre que la
+        jubilación parcial se hubiese simultaneado con un contrato de relevo.
+        Así pues, la base reguladora de la pensión de jubilación precedida de una
+        jubilación parcial se tendrán en cuenta las bases de cotización correspondientes al
+        período de trabajo a tiempo parcial en la empresa donde se redujo la jornada y el salario,
+        incrementadas hasta el 100% de jornada desarrollado antes de pasar a la situación de
+        jubilación parcial, y siempre que la misma se hubiese simultaneado con un contrato de
+        relevo.
+        El RDL 5/2013 introdujo la figura de Jubilación Activa, compatible con el
+        trabajo por cuenta ajena o propia, cobrando el 50% de la pensión.
+        Sin embargo, según el criterio interpretativo del INSS 1/2018, estas cotizaciones
+        no sirven en ningún caso para mejorar la pensión de jubilación reconocida. Es decir, no
+        se modifica la Base Reguladora que en su momento se tomó en cuenta para calcular la
+        pensión, lo que a todas luces es un agravio comparativo entre trabajadores por cuenta
+        ajena y propia, ya que la analogía según se ha expuesto con la citada Jurisprudencia del
+        Tribunal Supremo, es clara.
+        Por otro lado pero en el mismo sentido, aclarar con jurisprudencia lo que no deja
+        claro la norma y por tanto es susceptible de interpretación, la Disposición final 5ª de la
+        Ley 6/2017, de 24 de octubre, de Reformas Urgentes del Trabajo Autónomo, modificó
+        los apartados 2 y 5 del artículo 214 de la LGSS, permitiendo a los autónomos persona
+        física, que la cuantía de la pensión compatible con el trabajo alcanzará al 100 %,
+        siempre que contrate o tenga contratado a un trabajador por cuenta ajena. Así pues,
+        nuevo agravio comparativo, esta vez entre autónomos persona física y societarios, que a
+        falta de un pronunciamiento del Tribunal Supremo, los Tribunales de Justicia están
+        fallando a favor de reconocer este derecho también a los societarios.<p>
+        
+        Joaquín Calvo,
+        Abogado.</p>
+    </div>
+  
+    <div class="entrada-blog">
+      <h3 onclick="mostrarEntrada(this)">Incapacidad Permanente Total y Absoluta</h3>
+      <p style="display:none">Las propuestas de los Equipo de Valoración de Incapacidades (EVI) y ante un
+        determinado cuadro patológico, si hay limitaciones y de qué tipo son, en relación con el
+        ámbito laboral del trabajador.
+        Dispone el artículo 193 LGSS que &quot;es invalidez permanente la situación del
+        trabajador que, después de haber estado sometido al tratamiento prescrito y de haber
+        sido dado de alta médicamente, presenta reducciones anatómicas o funcionales graves,
+        susceptibles de determinación objetiva y presumiblemente definitivas, que disminuyan
+        o anulen su capacidad laboral&quot;.
+        Por su parte el apartado 1 del artículo 194 del mismo texto legal, establece en
+        cuanto a la incapacidad permanente, cualquiera que sea su causa determinante, la
+        clasificación en función del porcentaje de reducción de la capacidad de trabajo del
+        interesado, valorado de acuerdo con la lista de enfermedades que se apruebe
+        reglamentariamente y clasificada por grados, entre los que encontramos Total y
+        Absoluta.
+        El grado de Incapacidad Permanente, Total o Absoluta, dependerá de si la
+        patología impide el desempeño de una profesión u oficio con determinadas
+        características, coincidente o no con la profesión habitual, o bien, impide el desempeño
+        de toda profesión u oficio con un mínimo de dignidad y destreza que un trabajador
+        comparable, quedando una capacidad laboral meramente residual, teórica y que no
+        reúne las exigencias mínimas de continuidad, dedicación y eficiencia<p>
+        
+        Joaquín Calvo García, Abogado.</p>
+    </div>
+  
+    <div class="entrada-blog">
+      <h3 onclick="mostrarEntrada(this)">Cláusula Suelo en Hipotecas</h3>
+      <p style="display:none">Si tu hipoteca tiene cláusula suelo, podrías estar pagando más de lo debido. Puedes reclamar judicialmente su eliminación y la devolución de cantidades pagadas indebidamente. Lex Sax te acompaña durante todo el proceso de reclamación, protegiendo tus derechos frente a los bancos.</p>
+    </div>
+  
+    <div class="entrada-blog">
+      <h3 onclick="mostrarEntrada(this)">Ley de Segunda Oportunidad</h3>
+      <p style="display:none">Si tienes deudas que no puedes afrontar, la Ley de Segunda Oportunidad permite cancelarlas parcialmente o incluso por completo, facilitando un nuevo comienzo financiero. En Lex Sax estudiamos tu caso particular para ofrecerte la mejor solución legal.</p>
+    </div>
+  
+  </section>
+  
+  <script>
+  function mostrarEntrada(titulo) {
+    const texto = titulo.nextElementSibling;
+    texto.style.display = texto.style.display === 'none' ? 'block' : 'none';
+  }
+  </script>
+  
+  
 </main>
 
 <footer>
@@ -196,3 +345,4 @@
 
 </body>
 </html>
+
