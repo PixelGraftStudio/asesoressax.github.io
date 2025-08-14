@@ -1,75 +1,40 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contacto - Lex Sax Asesoría &amp; Abogados</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
-  <style>
-    :root {
-      --color-primario: #3a2e2a;
-      --color-secundario: #c77d4a;
-      --color-fondo: #fffaf5;
-      --max-ancho: 1200px;
-    }
-    body { font-family: 'Montserrat', sans-serif; margin: 0; background-color: var(--color-fondo); color: var(--color-primario); }
-    header { background: linear-gradient(to right, var(--color-secundario), #915634); color: white; padding: 3rem 1rem; text-align: center; }
-    nav { display: flex; justify-content: center; background-color: #6b4b3e; padding: 1rem; flex-wrap: wrap; }
-    nav a { color: white; margin: 0.5rem 1rem; text-decoration: none; font-weight: bold; }
-    nav a:hover { text-decoration: underline; }
-    main { max-width: var(--max-ancho); margin: 2rem auto; padding: 1rem; }
-    h2 { color: var(--color-primario); }
-    .contacto, .redes { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.5rem; }
-    .contacto a, .redes a {
-      background-color: var(--color-secundario);
-      color: white;
-      padding: 0.8rem 1.2rem;
-      text-align: center;
-      text-decoration: none;
-      border-radius: 6px;
-      flex: 1 1 220px;
-    }
-    .contacto a:hover, .redes a:hover { background-color: #915634; }
-    iframe { width: 100%; height: 300px; border: none; border-radius: 10px; margin-top: 1rem; }
-    footer { text-align: center; padding: 2rem 1rem; font-size: 0.9rem; background: #3a2e2a; color: white; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Lex Sax Asesoría</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        header { background-color: #3a2e2a; color: white; padding: 20px; text-align: center; }
+        main { max-width: 800px; margin: auto; padding: 20px; background: white; }
+        h1 { color: #3a2e2a; }
+        p { line-height: 1.6; }
+        .info { margin-top: 20px; }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Contacto</h1>
+    </header>
+    <main>
+        <h2>Ponte en contacto con nosotros</h2>
+        <p>Si tienes cualquier consulta, estaremos encantados de ayudarte.</p>
 
-<header>
-  <h1>Contacto</h1>
-  <p>Ponte en contacto con nosotros para resolver cualquier duda o concertar una cita.</p>
-</header>
+        <div class="info">
+            <p><strong>Teléfono:</strong> 34722513424</p>
+            <p><strong>Email:</strong> lexsaxasesores@gmail.com</p>
+            <p><strong>Dirección:</strong> Gran via n 13 entlo.9 <div class="p 03630"><!--  --></div>, Sax, Alicante</p>
+        </div>
 
-<nav>
-  <a href="index.html">Inicio</a>
-  <a href="equipo.html">Equipo</a>
-  <a href="contacto.html">Contacto</a>
-</nav>
+        <h3>Ubicación en Google Maps</h3>
+        <iframe 
+            src="https://www.bing.com/maps?pglt=41&q=google+maps&cvid=c4c6ca23cbfa4aa0ad620213b8e76eaa&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOTIGCAEQABhAMgYIAhAAGEAyBggDEAAYQDIGCAQQABhAMgYIBRAAGEAyBggGEAAYQDIGCAcQABhAMgYICBBFGDzSAQg4MDY4ajBqMagCALACAA&FORM=ANNTA1&PC=U531" 
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
 
-<main>
-  <section>
-    <h2>Datos de contacto</h2>
-    <div class="contacto">
-      <a href="tel:+34722513424">📞 +34 722 513 424</a>
-      <a href="mailto:lexsaxasesores@gmail.com?subject=Consulta%20desde%20la%20web">✉️ lexsaxasesores@gmail.com</a>
-    </div>
-    <div class="redes">
-      <a href="https://www.instagram.com/asesoreslexsax" target="_blank">📷 Instagram: @asesoreslexsax</a>
-      <a href="https://www.facebook.com/LexSaxAsesoria" target="_blank">📘 Facebook: Lex Sax Asesoría</a>
-    </div>
-  </section>
-
-  <section>
-    <h2>Ubicación</h2>
-    <p><strong>Dirección:</strong> Gran Vía Nº13, Entlo. 9, 03630 Sax (Alicante)</p>
-    <iframe src="https://www.google.com/maps?q=Gran+V%C3%ADa+13+Sax+Alicante&output=embed" loading="lazy"></iframe>
-  </section>
-</main>
-
-<footer>
-  &copy; 2025 Lex Sax Asesoría &amp; Abogados. Todos los derechos reservados.
-</footer>
-
+        <p><a href="index.html">⬅ Volver a la página principal</a></p>
+    </main>
 </body>
 </html>
