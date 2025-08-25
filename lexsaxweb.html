@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lex Sax Asesoría Integral & Abogados </title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="canonical" href="https://lexsaxasesoria.es/lexsaxweb.html">
+
+  <style>
+    :root {
+      --color-primario: #3a2e2a;
+      --color-secundario: #c77d4a;
+      --color-fondo: #fffaf5;
+      --max-ancho: 1200px;
+    }
+
+    * { box-sizing: border-box; }
+    body { font-family: 'Montserrat', sans-serif; margin: 0; background-color: var(--color-fondo); color: var(--color-primario); }
+    header {
+      background: linear-gradient(to right, #c77d4a, #915634);
+      color: white;
+      padding: 5rem 1rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      min-height: 300px;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('pexels-karolina-grabowska-7875996.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.25;
+      animation: movebg 60s linear infinite;
+      z-index: 0;
+      pointer-events: none;
+    }
+    @keyframes movebg {
+      0% { background-position: center top; }
+      100% { background-position: center bottom; }
+    }
+    @media (max-width: 768px) {
+      header {
+        padding: 3rem 1rem;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+    }
+    header h1, header p {
+      position: relative;
+      z-index: 1;
+    }
+    header h1 { margin: 0; font-size: 2.8rem; }
+    header p { font-size: 1.2rem; margin-top: 1rem; }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: #6b4b3e;
+      padding: 1rem;
+    }
+    nav a {
+      color: white;
+      margin: 0.5rem 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    main {
+      max-width: var(--max-ancho);
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    section { margin-bottom: 3rem; }
+    h2 { color: var(--color-primario); font-size: 2rem; margin-bottom: 1rem; }
+    p, li { line-height: 1.7; font-size: 1.05rem; }
+    ul { padding-left: 1.2rem; }
+
+    .contacto, .redes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    .contacto a, .redes a {
+      background-color: var(--color-secundario);
+      color: white;
+      padding: 0.8rem 1.2rem;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      flex: 1;
+      min-width: 200px;
+    }
+    .contacto a:hover, .redes a:hover { background-color: #915634; }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      background: #3a2e2a;
+      color: white;
+    }
+
+    #cookieConsent {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: #3a2e2a;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      z-index: 1000;
+    }
+    #cookieConsent button {
+      background: #c77d4a;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      margin-left: 1rem;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .entrada-blog {
+      background-color: #f3e5dc;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    .entrada-blog h3 {
+      margin-top: 0;
+      color: #3a2e2a;
+    }
+    .entrada-blog p {
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+
+<div id="cookieConsent">
+  Este sitio web utiliza cookies para garantizar que obtenga la mejor experiencia. <button onclick="this.parentElement.style.display='none'">Aceptar</button>
+</div>
+
+<header>
+  <h1>Lex Sax Asesoría & Abogados</h1>
+  <p>Asesoría y despacho jurídico con sede en Sax. Especialistas en derecho laboral, contencioso -administrativos, mercantil, tributario y asesoramiento fiscal, laboral y contable.</p>
+</header>
+
+<nav>
+  <a href="#quienes">Quiénes Somos</a>
+  <a href="#servicios">Servicios</a>
+  <a href="#contacto">Contacto</a>
+  <a href="#ubicacion">Ubicación</a>
+  <a href="#blog">Blog</a>
+</nav>
+
+<main>
+  <section id="quienes">
+    <h2>Quiénes Somos</h2>
+    <p><strong>Lex Sax Asesoria Integral </strong> es un Despacho Profesional Multidisciplinar de prestación de servicios de asesoramiento y gestión integral a Empresas y Particulares.</p>
+    <p>En el área jurídica apostamos por el asesoramiento preventivo con el fin de evitar futuros conflictos y pleitos innecesarios. La prevención permite tomar la decisión más óptima entre todas las posibles.</p>
+    <p>En el terreno empresarial realizamos un estudio, análisis, elaboración y control de costes personalizado, proporcionando la calidad, cercanía y profesionalidad acorde con la optimización de resultados según los recursos disponibles.</p>
+    <p>La finalidad es realizar un Plan de Asesoramiento Integral adaptado a sus necesidades proporcionando soporte Fiscal, Laboral, Contable y Jurídico, quedando completamente cubierta cualquier aspecto relacionado con su empresa.</p>
+  </section>
+
+  <section id="servicios">
+    <h2>Nuestras Especialidades</h2>
+    <ul>
+      <li>Asesoría fiscal, contable y laboral</li>
+      <li>Representación legal en despidos y conflictos laborales</li>
+      <li>Consultas y recursos contencioso-administrativos</li>
+      <li>Asesoría mercantil para autónomos y empresas</li>
+      <li>Defensa y gestión tributaria</li>
+    </ul>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Estamos a tu disposición para cualquier consulta o cita previa.</p>
+    <div class="contacto">
+      <a href="tel:+34722513424">📞 +34 722 513 424</a>
+      <a href="mailto:lexsaxasesores@gmail.com?subject=Consulta desde la web&body=Hola, me gustaría recibir información...">✉️ lexsaxasesores@gmail.com</a>
+    </div>
+
+    <div class="redes">
+      <a href="https://www.instagram.com/asesoreslexsax" target="_blank">📷 Instagram: @asesoreslexsax</a>
+      <a href="https://www.facebook.com/LexSaxAsesoria" target="_blank">📘 Facebook: Lex Sax Asesoría</a>
+    </div>
+  </section>
+
+  <section id="ubicacion">
+    <h2>Ubicación</h2>
+    <p><strong>Dirección:</strong> Gran Vía Nº13, Entlo. 9, 03630 Sax (Alicante)</p>
+    <iframe src="https://www.google.com/maps?q=Gran+Vía+13+Sax+Alicante&output=embed"></iframe>
+  </section>
+
+  
+  <section id="blog">
+    <h2>Blog</h2>
+  
+    <div class="entrada-blog">
+      <h3 onclick="mostrarEntrada(this)">¿Qué hacer ante un despido improcedente?</h3>
+      <p style="display:none">Si has sido despedido injustificadamente, mantén la calma. Revisa tu contrato y carta de despido. Consulta a un abogado laboralista para defender tus derechos. Tienes 20 días hábiles para reclamar. En Lex Sax Asesoría valoramos tu caso para proteger tus intereses.</p>
+    </div>
+  
+    <div class="entrada-blog">
+      <h3 onclick="mostrarEntrada(this)">Consejos fiscales para autónomos en 2025</h3>
+      <p style="display:none">La nueva legislación fiscal exige claridad y organización. Controla deducciones, lleva al día gastos y facturas, y presenta correctamente el modelo 303. Lex Sax optimiza tus impuestos y evita sanciones.</p>
+    </div>
+  
+    <div class="entrada-blog">
+      <h3 onclick="mostrarEntrada(this)">Responsabilidad Tributaria del Administrador</h3>
+      <p style="display:none">Hacienda puede derivar la responsabilidad tributaria de la Sociedad al administrador o
+        administradores de una sociedad y les obliga a responder con su patrimonio personal por la
+        deuda que dejó la empresa. Suele ocurrir cuando una sociedad cesa su actividad habiendo
+        dejado obligaciones tributarias pendientes de pago.
+        Los Artículos 42 y 43 de la Ley General Tributaria (LGT) permiten a Hacienda reclamar
+        deudas de una sociedad de forma solidaria y subsidiaria respectivamente a los
+        administradores, si estos no realizan los actos necesarios una vez que conocen o debieron
+        conocer el estado de insolvencia. La forma de evitarlo es instar un concurso de acreedores, ya
+        que de lo contrario el administrador responderá con su patrimonio personal por las deudas de
+        la empresa.
+        Si el administrador ha actuado de forma diligente, puede evitar la derivación de
+        responsabilidad, y para ello, ha tenido que cerrar el negocio habiendo pagado las deudas o,
+        siendo consciente de su existencia, instar un concurso de acreedores para liquidarlas.
+        La regla general es la responsabilidad subsidiaria (LGT art.43), precisando la
+        responsabilidad solidaria (LGT art.42) un precepto legal que expresamente la determine. El
+        ámbito de la responsabilidad se extiende a la totalidad de la deuda tributaria exigida en
+        período voluntario, pero no a las sanciones, salvo en determinadas excepciones.
+        La LGT exige (art. 41.5) que, tratándose de un caso de responsabilidad subsidiaria, se
+        dicte la declaración de fallido del deudor principal y de los posibles responsables solidarios,
+        siendo una condictio iuris para la exigibilidad de la deuda. A partir de este momento comienza
+        el dies a quo para derivar la responsabilidad al administrador.
+        En los traspasos, también responde el sucesor de la actividad por las obligaciones
+        tributarias contraídas por el anterior titular, por lo que un traspaso de negocio puede llevar
+        consigo una derivación de responsabilidad tributaria.</p>
+    </div>
+  
+    <div class="entrada-blog">
+      <h3 onclick="mostrarEntrada(this)">De Jubilación Activa a Jubilación Total</h3>
+      <p style="display:none">La Sala IV del Tribunal Supremo, en su interpretación del artículo 18.2 RD
+        1131/2002, reiteró en su sentencia de 1 de octubre de 2020 que, para el cálculo de la
+        base reguladora de la pensión de jubilación ordinaria se han de tener en cuenta las bases
+        de cotización del periodo de trabajo a tiempo parcial, cuando el trabajador redujo su
+        jornada y salario, como si hubiera trabajado a jornada completa, siempre que la
+        jubilación parcial se hubiese simultaneado con un contrato de relevo.
+        Así pues, la base reguladora de la pensión de jubilación precedida de una
+        jubilación parcial se tendrán en cuenta las bases de cotización correspondientes al
+        período de trabajo a tiempo parcial en la empresa donde se redujo la jornada y el salario,
+        incrementadas hasta el 100% de jornada desarrollado antes de pasar a la situación de
+        jubilación parcial, y siempre que la misma se hubiese simultaneado con un contrato de
+        relevo.
+        El RDL 5/2013 introdujo la figura de Jubilación Activa, compatible con el
+        trabajo por cuenta ajena o propia, cobrando el 50% de la pensión.
+        Sin embargo, según el criterio interpretativo del INSS 1/2018, estas cotizaciones
+        no sirven en ningún caso para mejorar la pensión de jubilación reconocida. Es decir, no
+        se modifica la Base Reguladora que en su momento se tomó en cuenta para calcular la
+        pensión, lo que a todas luces es un agravio comparativo entre trabajadores por cuenta
+        ajena y propia, ya que la analogía según se ha expuesto con la citada Jurisprudencia del
+        Tribunal Supremo, es clara.
+        Por otro lado pero en el mismo sentido, aclarar con jurisprudencia lo que no deja
+        claro la norma y por tanto es susceptible de interpretación, la Disposición final 5ª de la
+        Ley 6/2017, de 24 de octubre, de Reformas Urgentes del Trabajo Autónomo, modificó
+        los apartados 2 y 5 del artículo 214 de la LGSS, permitiendo a los autónomos persona
+        física, que la cuantía de la pensión compatible con el trabajo alcanzará al 100 %,
+        siempre que contrate o tenga contratado a un trabajador por cuenta ajena. Así pues,
+        nuevo agravio comparativo, esta vez entre autónomos persona física y societarios, que a
+        falta de un pronunciamiento del Tribunal Supremo, los Tribunales de Justicia están
+        fallando a favor de reconocer este derecho también a los societarios.<p>
+        
+        Joaquín Calvo,
+        Abogado.</p>
+    </div>
+  
+    <div class="entrada-blog">
+      <h3 onclick="mostrarEntrada(this)">Incapacidad Permanente Total y Absoluta</h3>
+      <p style="display:none">Las propuestas de los Equipo de Valoración de Incapacidades (EVI) y ante un
+        determinado cuadro patológico, si hay limitaciones y de qué tipo son, en relación con el
+        ámbito laboral del trabajador.
+        Dispone el artículo 193 LGSS que &quot;es invalidez permanente la situación del
+        trabajador que, después de haber estado sometido al tratamiento prescrito y de haber
+        sido dado de alta médicamente, presenta reducciones anatómicas o funcionales graves,
+        susceptibles de determinación objetiva y presumiblemente definitivas, que disminuyan
+        o anulen su capacidad laboral&quot;.
+        Por su parte el apartado 1 del artículo 194 del mismo texto legal, establece en
+        cuanto a la incapacidad permanente, cualquiera que sea su causa determinante, la
+        clasificación en función del porcentaje de reducción de la capacidad de trabajo del
+        interesado, valorado de acuerdo con la lista de enfermedades que se apruebe
+        reglamentariamente y clasificada por grados, entre los que encontramos Total y
+        Absoluta.
+        El grado de Incapacidad Permanente, Total o Absoluta, dependerá de si la
+        patología impide el desempeño de una profesión u oficio con determinadas
+        características, coincidente o no con la profesión habitual, o bien, impide el desempeño
+        de toda profesión u oficio con un mínimo de dignidad y destreza que un trabajador
+        comparable, quedando una capacidad laboral meramente residual, teórica y que no
+        reúne las exigencias mínimas de continuidad, dedicación y eficiencia<p>
+        
+        Joaquín Calvo García, Abogado.</p>
+    </div>
+  
+    <div class="entrada-blog">
+      <h3 onclick="mostrarEntrada(this)">Cláusula Suelo en Hipotecas</h3>
+      <p style="display:none">Si tu hipoteca tiene cláusula suelo, podrías estar pagando más de lo debido. Puedes reclamar judicialmente su eliminación y la devolución de cantidades pagadas indebidamente. Lex Sax te acompaña durante todo el proceso de reclamación, protegiendo tus derechos frente a los bancos.</p>
+    </div>
+  
+    <div class="entrada-blog">
+      <h3 onclick="mostrarEntrada(this)">Ley de Segunda Oportunidad</h3>
+      <p style="display:none">Si tienes deudas que no puedes afrontar, la Ley de Segunda Oportunidad permite cancelarlas parcialmente o incluso por completo, facilitando un nuevo comienzo financiero. En Lex Sax estudiamos tu caso particular para ofrecerte la mejor solución legal.</p>
+    </div>
+  
+  </section>
+  
+  <script>
+  function mostrarEntrada(titulo) {
+    const texto = titulo.nextElementSibling;
+    texto.style.display = texto.style.display === 'none' ? 'block' : 'none';
+  }
+  </script>
+  
+  
+</main>
+
+<footer>
+  &copy; 2025 Lex Sax Asesoría & Abogados . Todos los derechos reservados.
+</footer>
+
+</body>
+</html>
+
